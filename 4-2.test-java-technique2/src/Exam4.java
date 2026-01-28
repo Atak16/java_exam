@@ -11,7 +11,10 @@ public class Exam4 {
 
         String key1 = map.get("埼玉");
         String capital1 = key1;
-        System.out.println("埼玉の県庁所在地は" + capital1 + "です");
-        System.out.println("沖縄の県庁所在地は" + map.get("沖縄") + "です");
+        System.out.println(key1 + "埼玉の県庁所在地は" + capital1 + "です");
+
+        String key2 = map.get("沖縄");
+        String capital2 = key2;
+        System.out.println("沖縄の県庁所在地は" + capital2 + "です");
     }
 }
