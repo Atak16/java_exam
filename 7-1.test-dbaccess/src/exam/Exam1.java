@@ -25,12 +25,16 @@ public class Exam1 {
 			con = DriverManager.getConnection(url, user, password);
 
 			// (2)SQL文を作成
-			sql = "INSERT  INTO test_members(name, age, dep_id) VALUES('山田太郎', '62', '1')";
-			sql = "INSERT  INTO test_members(name, age, dep_id) VALUES('佐藤花子', '33', '2')";
-			sql = "INSERT  INTO test_members(name, age, dep_id) VALUES('遠藤次郎', '55', '2')";
+			sql1 = "INSERT  INTO test_members(name, age, dep_id) VALUES('山田太郎', 62, 1)";
+			sql2 = "INSERT  INTO test_members(name, age, dep_id) VALUES('佐藤花子', 33, 2)";
+			sql3 = "INSERT  INTO test_members(name, age, dep_id) VALUES('遠藤次郎', 55, 2)";
+
+			// "INSERT  INTO テーブル名(カラム名) VALUES(登録する値)";
 
 			// (3)SQL実行準備
-			pstmt = con.prepareStatement(sql);
+			pstmt = con.prepareStatement(sql1);
+			pstmt = con.prepareStatement(sql2);
+			pstmt = con.prepareStatement(sql3);
 
 			// (4)SQL実行
 			// ※ここにSQL実行処理を書く
