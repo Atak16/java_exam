@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>名前を入力してください</h1>
+   <form action="/finished.html" method="post">
+       <input type="text" th:field="*{name}" name="name">
+       <button>送信</button>
+   </form>
+</body>
+</html>
