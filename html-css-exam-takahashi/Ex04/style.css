@@ -1,0 +1,9 @@
+.line {
+    border-collapse: collapse;
+    border: solid;
+}
+
+th,
+td {
+    border: solid;
+}

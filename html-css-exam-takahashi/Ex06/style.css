@@ -1,0 +1,17 @@
+.list {
+    list-style: none;
+    padding-left: 0;
+    color: white;
+}
+
+.red {
+    margin-bottom: 4px;
+    width: 400px;
+    background-color: darkred;
+}
+
+.green {
+    margin-bottom: 4px;
+    width: 400px;
+    background-color: darkgreen;
+}

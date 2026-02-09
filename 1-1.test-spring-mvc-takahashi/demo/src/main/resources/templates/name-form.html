@@ -7,9 +7,11 @@
 </head>
 <body>
    <h1>名前を入力してください</h1>
-   <form action="/finished.html" method="post">
-       <input type="text" th:field="*{name}" name="name">
+   <form action="finished.html" th:action ="@{/yamada/taro}" method ="post">
+       <input type="text" name ="name">
        <button>送信</button>
    </form>
+</form>
+
 </body>
 </html>

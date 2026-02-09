@@ -7,8 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/exam02")
 public class Ex02Controller {
 
+    @RequestMapping("/show")
+    public String showCompanyIntroduction() {
+        return "redirect:/exam02/showCompanyIntroduction";
+    }
+
     @RequestMapping("/show-company-introduction")
-    public String showSelfIntroduction() {
+    public String showCompanyIntroduction2() {
         return "exam-02";
     }
 }
