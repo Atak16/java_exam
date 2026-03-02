@@ -83,17 +83,11 @@ public class MemberRepository {
 			String insertSql = "insert into test_members (name, age, dep_id) values (:name, :age, :depId)";
 			template.update(insertSql, param);
 			// ここに実行処理を書く
-			Number key=insert.executeAndReturnKey(param);
-			member.setId(key.intValue());
-			System.out.println(key+"が割り当てられました");
 
 		} else {
 			String updateSql = "update test_members set name = :name, age = :age, dep_id = :depId where id = :id";
 			template.update(updateSql, param);
 			// ここに実行処理を書く
-			Number key=insert.executeAndReturnKey(param);
-			member.setId(key.intValue());
-			System.out.println(key+"が割り当てられました");
 		}
 
 		return member;
